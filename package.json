@@ -1,0 +1,12 @@
+{
+  "name": "babel-flow-identifiers",
+  "version": "0.0.0",
+  "description": "Check if an identifier is a Flow identifier",
+  "main": "index.js",
+  "repository": "git@github.com:babel-utils/babel-flow-identifiers.git",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "flow-bin": "^0.47.0"
+  }
+}
