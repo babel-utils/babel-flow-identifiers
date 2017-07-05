@@ -6,6 +6,7 @@
   "repository": "git@github.com:babel-utils/babel-flow-identifiers.git",
   "author": "James Kyle <me@thejameskyle.com>",
   "license": "MIT",
+  "files": ["index.js"],
   "scripts": {
     "test": "jest"
   },
