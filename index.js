@@ -43,10 +43,11 @@ function isReference(path) {
 }
 
 function isFlowReference(path) {
-  return isReference(path) && findFlowBinding(path, path.node.name);
+  let binding = findFlowBinding(path, path.node.name);
+  return !!binding && isFlowIdentifier(binding.path);
 }
 
-exports.isFlowIdentifier = (path /*: Path */) /*: boolean */ => {
+function isFlowIdentifier(path /*: Path */) /*: boolean */ {
   if (path.isTypeParameter()) {
     return true;
   } else if (!path.isIdentifier()) {
@@ -56,10 +57,14 @@ exports.isFlowIdentifier = (path /*: Path */) /*: boolean */ => {
   } else if (isTypeOfValue(path)) {
     return false;
   } else if (path.parentPath.isFlow()) {
-    return true;
-  } else if (isFlowReference(path)) {
-    return true;
+    if (isReference(path)) {
+      return isFlowReference(path);
+    } else {
+      return true;
+    }
   } else {
     return false;
   }
-};
+}
+
+exports.isFlowIdentifier = isFlowIdentifier;

@@ -57,6 +57,20 @@ pluginTester({
       code: 'import { TEST } from "./module";',
     },
     {
+      title: 'value reference import',
+      code: `
+        import TEST from "./module";
+        type b = TEST;
+      `
+    },
+    {
+      title: 'value reference class',
+      code: `
+        class TEST {}
+        type b = TEST;
+      `
+    },
+    {
       title: 'typeof',
       code: 'type A = typeof TEST;',
     },
