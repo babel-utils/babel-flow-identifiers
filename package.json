@@ -6,7 +6,17 @@
   "repository": "git@github.com:babel-utils/babel-flow-identifiers.git",
   "author": "James Kyle <me@thejameskyle.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "babel-flow-scope": "^1.2.0",
+    "babel-identifiers": "^1.0.0"
+  },
   "devDependencies": {
-    "flow-bin": "^0.47.0"
+    "babel-plugin-tester": "^3.2.0",
+    "babylon-options": "^1.1.2",
+    "flow-bin": "^0.47.0",
+    "jest": "^20.0.4"
   }
 }
