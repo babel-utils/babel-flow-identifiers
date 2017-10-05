@@ -106,5 +106,12 @@ pluginTester({
         type b = TEST;
       `,
     },
+    {
+      title: 'type reference export type',
+      code: `
+        export type TEST = number;
+        type b = TEST;
+      `,
+    },
   ]
 });

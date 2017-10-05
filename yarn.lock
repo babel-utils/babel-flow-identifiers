@@ -160,9 +160,9 @@ babel-core@^6.0.0, babel-core@^6.24.1, babel-core@^6.25.0:
     slash "^1.0.0"
     source-map "^0.5.0"
 
-babel-flow-scope@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/babel-flow-scope/-/babel-flow-scope-1.2.0.tgz#2f4cc99495e87a38e0615e4e938db238e48f51a7"
+babel-flow-scope@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/babel-flow-scope/-/babel-flow-scope-1.2.1.tgz#2b646211811a203ef0b11ebd219af29428b15990"
 
 babel-generator@^6.18.0, babel-generator@^6.25.0:
   version "6.25.0"

@@ -13,7 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "babel-flow-scope": "^1.2.0",
+    "babel-flow-scope": "^1.2.1",
     "babel-identifiers": "^1.0.0"
   },
   "devDependencies": {
